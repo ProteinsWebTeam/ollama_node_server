@@ -6,7 +6,9 @@
 source ollama_envs.sh
 
 # Start server and run model passed as argument
+cd "$OLLAMA_BINARY"
 ./ollama serve &
 sleep 5
+
 ./ollama run "$1" &
 wait
