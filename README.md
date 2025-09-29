@@ -1,2 +1,2 @@
-# ollama_node_server
+# Ollama Node Server
 Start an Ollama server on a GPU node on the cluster
