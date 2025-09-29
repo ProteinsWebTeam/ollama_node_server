@@ -1,5 +1,4 @@
 # Ollama Node Server
-Start an Ollama server on a GPU node on the cluster
 
 Setup your environment variables in ollama_envs.sh
 - **OLLAMA_BINARY**: Ollama bin folder path;
