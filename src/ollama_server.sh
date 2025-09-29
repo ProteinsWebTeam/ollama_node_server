@@ -1,6 +1,8 @@
 #!/bin/bash
 #SBATCH --job-name=ollama_job
 #SBATCH --mem=64GB
+#SBATCH --error=error.log
+#SBATCH --output=output.log
 
 # Get Ollama binary and cache folder
 source ollama_envs.sh

@@ -7,7 +7,6 @@ sleep 5
 
 echo "Waiting for node name and port.."
 node=$(scontrol show job "$jobid" | grep NodeList=codon | awk -F '=' '{print $2}')
-sleep 5
 
 # Get port where Ollama process is listening
 port=$(srun --jobid=$jobid lsof -i -P -n | grep ollama | awk '{print $9}' | awk -F '*:' '{print $2}')
