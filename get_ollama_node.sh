@@ -12,3 +12,4 @@ sleep 5
 # Get port where Ollama process is listening
 port=$(ssh "$node".ebi.ac.uk "lsof -i -P -n | grep ollama | awk '{print \$9}' | awk -F '*:' '{print \$2}'")
 echo "$node:$port"
+export OLLAMA_SERVER_ADDRESS="$node:$port"

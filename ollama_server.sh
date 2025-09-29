@@ -4,7 +4,7 @@
 #SBATCH --error=error.log
 #SBATCH --output=output.log
 
-cd /hps/nobackup/agb/interpro/embl_llm_metrics/ollama/bin
+cd /hps/software/users/agb/interpro/llms/ollama/bin 
 
 # Receive requests from outside on an available port
 export OLLAMA_HOST=0.0.0.0:0
