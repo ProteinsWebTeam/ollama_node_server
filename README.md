@@ -8,6 +8,5 @@ We recommend keeping OLLAMA_HOST as is.
 
 Run
 ```
-source ollama_envs.sh
 source get_ollama_node.sh <gpu-name> <nr-gpus> <time_hrs> <model_name>
 ```
